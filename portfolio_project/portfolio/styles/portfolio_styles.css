@@ -1,0 +1,216 @@
+@charset "utf-8";
+
+/*
+   Portfolio Project style sheet
+   Author: Aubrey Davies
+   Date:   1/28/2021
+   Filename: portfolio_styles.css
+*/
+
+a:link {
+    color: black;
+}
+
+a:active {
+    color: #F63CE0;
+}
+
+a:visited {
+    color: #9B088A;
+}
+
+body {
+    background-color: #c4fdcb;
+    overflow-x: hidden;
+}
+
+#contact > div > ul > li {
+    padding: 10px 10px 0 10px;
+    list-style: none;
+}
+
+#contact > div > ul > li > a {
+    margin-left: auto;
+}
+
+h1 {
+    color: white;
+    font-size: 2.3rem;
+    font-family: "Lucida Bright", serif;
+    margin: 15px;
+}
+
+h2 {
+    color: white;
+    font-size: 1.2rem;
+    font-family: "Goudy Old Style", serif;
+    margin: 20px;
+}
+
+h3 {
+    background-color: #0B991B;
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 1.75rem;
+    font-family: Georgia, Times, Times New Roman, serif;
+    padding: 10px 0 10px 0;
+    margin-bottom: 0;
+}
+
+h4 {
+    background-color: #0B991B;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 1.35rem;
+    font-family: Georgia, Times, Times New Roman, serif;
+    padding: 10px 0 10px 0;
+}
+
+div.row > p {
+    font-weight: bold;
+}
+
+header {
+    background-color: #AA0E98;
+    padding: 20px;
+    text-align: center;
+}
+
+img {
+    display: block;
+    width: 40%;
+    margin: auto;
+    border: 5px solid #E90CCF;
+    border-radius: 5rem;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav > ul > li {
+    background-color: #55F167;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+}
+
+p {
+    background-color: #55F167;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px
+}
+
+.row {
+    margin: 10px 0 10px 0;
+}
+
+.row > .col:nth-of-type(2) {
+    text-align: right;
+}
+
+section {
+    margin: 0 20px 20px 20px;
+}
+
+section#intro {
+    background-color: #55F167;
+    border: 5px solid #E90CCF;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+section > div {
+    background-color: #55F167;
+    border: 5px solid #E90CCF;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+ul {
+    margin-top: 10px;
+}
+
+ul.col > li {
+    font-weight: bold;
+}
+
+
+
+/* styles for mobile devices */
+@media screen and (max-width: 480px) {
+    img {
+        width: 80%;
+        display: block;
+        margin: 30px auto;
+    }
+}
+
+/* styles for tablets */
+@media screen and (min-width: 481px) {
+    img {
+        width: 60%;
+        display: block;
+        margin: 30px auto 0 auto;
+    }
+
+    div#top1 {
+        display: grid;
+        grid-gap: 20px;
+    }
+
+    section#main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    aside {
+        margin: auto 50px auto 50px;
+    }
+}
+
+/* styles for desktops */
+@media screen and (min-width: 961px) {
+    img {
+        width: 40%;
+        vertical-align: center;
+        margin: 30px auto auto auto;
+    }
+
+    div#top {
+        display: grid;
+        grid-gap: 20px;
+    }
+
+    div#top1 {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    div#top2 {
+        margin: auto;
+    }
+
+    section#main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+
+    section#intro {
+        margin: 30px 40px 0 0;
+    }
+
+    aside {
+        margin: 0 40px 20px 40px;
+    }
+}
